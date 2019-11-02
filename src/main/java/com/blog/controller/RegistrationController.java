@@ -47,8 +47,8 @@ public class RegistrationController {
         }
 
         if (!bindingResult.hasErrors()) {
-            // Registration successful, save user
-            // Set user role to USER and set it as active
+           // Tallentaa käyttäjän jos rekisteröinti onnistui
+            // Asettaa roolin USER
             userService.save(user);
 
             model.addAttribute("successMessage", "User has been registered successfully");
